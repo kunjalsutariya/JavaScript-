@@ -1,0 +1,27 @@
+<script>
+
+    class Demo {
+        constructor(grid, name, std, city) {
+            this.grid = grid;
+            this.name = name;
+            this.std = std;
+            this.city = city;
+        }
+        getter() {
+            console.log(`Grid:-${this.grid}`);
+            console.log(`name:-${this.name}`);
+            console.log(`std:-${this.std}`);
+            console.log(`city:-${this.city}`);
+        }
+    }
+    let st1 = new Demo(6020, "kunjal", 12, "Surat");
+    let st2 = new Demo(3456, "krish", 11, "ahemdabad");
+    let st3 = new Demo(1332, "hetvi", 12, "vapi");
+    let st4 = new Demo(8903, "jayesh", 10, "gandhinagar");
+
+    st1.getter();
+    st2.getter();
+    st3.getter();
+    st4.getter();
+
+</script>

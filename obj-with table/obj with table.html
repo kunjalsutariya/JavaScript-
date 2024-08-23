@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obj with table</title>
+</head>
+
+<body>
+    <table align="center" border="1">
+        <thead>
+            <tr>
+                <th>Sr No.</th>
+                <th>NAME</th>
+                <th>MOBILE NUMBER</th>
+            </tr>
+        </thead>
+        <tbody id="data"></tbody>
+    </table>
+</body>
+<Script type="text/JavaScript">
+        let record=[
+            {
+                name:"kunjal",
+                phone:1234578,
+            },
+            {
+                name:"janvi",
+                phone:5678990,
+            },
+            {
+                name:"neha",
+                phone:987654,
+            },
+            {
+                name:"mayuri",
+                phone:098765,
+            },
+            {
+                name:"dhruvi",
+                phone:1226541,
+            },
+        ]
+            let tbl="";
+            record.map((val,index)=>
+               {
+                tbl +=`
+                        <tr>
+                            <td>${++index}</td>    
+                            <td>${val.name}</td>    
+                            <td>${val.phone}</td>    
+                        </tr>
+                    `
+               }
+        )
+
+        document.getElementById('data').innerHTML=tbl;
+
+    </Script>
+
+</html>

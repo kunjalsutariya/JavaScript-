@@ -1,0 +1,25 @@
+<script type="text/javascript">
+
+    class person {
+        constructor(name, age, country) {
+            this.name = name;
+            this.age = age;
+            this.country = country;
+        }
+        Details() {
+            document.write(`Name: ${this.name}<br>`);
+            document.write(`Age: ${this.age}<br>`);
+            document.write(`Country: ${this.country}<br>`);
+        }
+    }
+    const person1 = new person("jal", 19, "IND");
+    const person2 = new person("utsav", 21, "USA");
+
+
+    document.write("<h3>Person-1 Details:-</h3>");
+    person1.Details(); 
+ 
+    document.write("<h3>Person-2 Details:-</h3>");
+    person2.Details();
+
+</script>

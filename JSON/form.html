@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form align="center">
+            <h2>Add Users</h2>
+            Name : <input type="text" id="name" placeholder="Enter Your Name "> <br><br>
+            <button onclick="saveData()" type="button">Submit</button>
+        </form>
+    </div>
+
+    <script>
+     let data = []
+     const saveData = () => {
+        let username=document.getElementById('name').value;
+
+        let obj = {
+            id:Math.floor(Math.random()*1000),
+            name : username
+        }
+        data.push(obj);
+        localStorage.setItem('user',JSON.stringify(data));
+
+     }
+    </script>
+</body>
+
+</html>

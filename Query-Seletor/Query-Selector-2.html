@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p class="demo">Kunjal</p>
+    <p class="demo">Mayuri</p>
+    <p class="demo">Vidhi</p>
+
+    <button onclick="clickEvent()">Click</button>
+
+    <script>
+        const clickEvent = () =>{
+            let p=document.querySelectorAll('.demo')
+            console.log(p);
+             for(let i=0 ;i<p.length;i++){
+                if(i%2==0){
+                    p[i].style.color = "red"; 
+                }
+                else{
+                    p[i].innerHTML = "Shreya";
+                    p[i].style.fontSize = "20px";
+                    p[i].style.color = "blue";
+                }
+             }
+        }
+    </script>
+</body>
+</html>

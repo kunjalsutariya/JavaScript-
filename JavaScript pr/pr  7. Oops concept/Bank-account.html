@@ -1,0 +1,39 @@
+<script type="text/javascript">
+    class bankaccount {
+        constructor(accno, bal) {
+            this.accno = accno;
+            this.bal = bal;
+        }
+
+        withdrow(val) {
+            let accountno = parseInt(prompt("ENTER YOUR ACCOUNT NUMBER :"));
+            if (this.accno == accountno) {
+                if (val == 0) {
+                    console.log(" 0 is not add");
+                }
+                else {
+                    if (this.bal <= val) {
+                        console.log("insuficient balance");
+                    }
+                    else { 
+                        this.bal -= val;
+                        console.log(`Your balance is : ${this.bal}`);
+                    }
+                }
+            }
+            else{
+                alert("Invalid account no ");
+                return false;
+            }
+
+        }
+        deposite(val) {
+            this.bal += val;
+            console.log(`Your balance is : ${this.bal}`);
+        }
+    }
+    let bank = new bankaccount(12121212121, 1000);
+    bank.deposite(200);
+    bank.deposite(1000);
+    bank.withdrow(350);
+</script>

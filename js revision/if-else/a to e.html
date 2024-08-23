@@ -1,0 +1,59 @@
+<script>
+    let a = parseInt(prompt("Enetr the a"));
+    let b = parseInt(prompt("Enetr the b"));
+    let c = parseInt(prompt("Enetr the c"));
+    let d = parseInt(prompt("Enetr the d"));
+    let e = parseInt(prompt("Enetr the e"));
+
+    if (a > b) {
+        if (a > c) {
+            if (a > d) {
+                if (a > e) {
+                    document.write(`<h1>A is Maxx</h1>`);
+                }
+                else {
+                    document.write(`<h1>E is Maxx</h1>`);
+                }
+            }
+            else {
+                document.write(`<h1>D is Maxx</h1>`);
+            }
+        }
+        else {
+            document.write(`<h1>C is Maxx</h1>`);
+        }
+    }
+    else {
+        if(b>c){
+            if(b>d){
+                if(b>e){
+                    document.write(`<h1>B is Maxx</h1>`);
+                }
+                else{
+                    document.write(`<h1>E is Maxx</h1>`);
+                }
+            }
+            else{
+                document.write(`<h1>d is Maxx</h1>`);
+            }
+        }   
+        else{
+            if(c>d){
+                if(c>e){
+                    document.write(`<h1>C is Maxx</h1>`);
+                }
+                else{
+                    document.write(`<h1>E is Maxx</h1>`);
+                }
+            }
+            else{
+                if(d>e){
+                    document.write(`<h1>D is Maxx</h1>`);
+                }
+                else{
+                    document.write(`<h1>E is Maxx</h1>`);
+                }
+            }
+        } 
+    }
+</script>

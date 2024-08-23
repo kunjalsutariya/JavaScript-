@@ -1,0 +1,28 @@
+<!-- 11. Write a JavaScript program to create basic calculator using ledder if else. -->
+
+<script>
+    let  operator=prompt("Enetr the  operator ");
+    
+    let a=parseInt(prompt("Enetr no of a:"));
+    let b=parseInt(prompt("Enetr no of b:"));
+
+    if(operator == '+'){
+       document.write("Addition  "+ a + " and " + b + "=  <br> Your ans is " + ( a + b));
+    }
+    else if(operator == '-'){
+      document.write("Substraction  "+ a + " and " + b + "=  <br> Your ans is " + ( a - b));
+    }
+    else if(operator == '*'){
+      document.write("Multiplication  "+ a + " and " + b + "=  <br> Your ans is " + ( a * b));
+    }
+    else if(operator == '/'){
+      document.write("Division  "+ a + " and " + b + "=  <br> Your ans is " + ( a / b));
+    }
+    else if(operator == '%'){
+      document.write("Modula  "+ a + " and " + b + "=  <br> Your ans is " + ( a % b));
+    }
+    else{
+        document.write('INVALID CHOICE');
+    }
+
+</script>

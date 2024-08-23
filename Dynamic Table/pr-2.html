@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c-language & javascript</title>
+</head>
+<body>
+    <p id="a+b"></p>
+    <p id="a-b"></p>
+    <p id="a*b"></p>
+    <p id="a/b"></p>
+
+    <h2>swapping</h2>
+    <p id="a"></p>
+    <p id="b"></p>
+
+    <script>
+         
+         let a = parseInt(prompt("Enetr num of a")); //10
+         let b = parseInt(prompt("Enetr num of b")); //20
+
+
+         document.getElementById("a+b").innerHTML="a+b="+(a+b);
+         document.getElementById("a-b").innerHTML="a-b="+(a-b);
+         document.getElementById("a*b").innerHTML="a*b="+(a*b);
+         document.getElementById("a/b").innerHTML="a/b="+(a/b);
+        a=a*b; // 10*20=200  a=a^b;
+        b=a/b; // 200/20=10  b=a^b;   
+        a=a/b; // 200/10=20  a=a^b;
+
+        document.getElementById("a").innerHTML="a="+(a);
+        document.getElementById("b").innerHTML="b="+(b);
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+
+<body>
+    <table align="center" border="1" cellpadding="5" cellspacing="1">
+        <form>
+            <tr>
+                <td>Name:-</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>E-mail:-</td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td>Phone:-</td>
+                <td><input type="text" id="phone"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="SUBMIT" onclick="saveRecord()"></td>
+            </tr>
+        </form>
+    </table>
+
+    <script>
+        function saveRecord() {
+            let name = document.getElementById('name').value;
+            console.log(name);
+            let email = document.getElementById('email').value;
+            console.log(email);
+            let phone = document.getElementById('phone').value;
+            console.log(phone);
+
+            if (!name) {
+                alert("Name is required");
+                return false;
+            }
+            if (!email) {
+                alert("Email is required");
+                return false;
+            }
+            if (!phone) {
+                alert("Phone is required");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

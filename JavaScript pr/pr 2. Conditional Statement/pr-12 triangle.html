@@ -1,0 +1,20 @@
+<!-- 12.Write a JavaScript   program to input angles of a triangle and check whether triangle is valid or not. -->
+
+<script>
+    let angle1=parseInt(prompt("Enetr dagree of angle A:"));
+    let angle2=parseInt(prompt("Enetr dagree of angle B:"));
+    let angle3=parseInt(prompt("Enetr dagree of angle C:"));
+
+    document.write("angle A is = "+ angle1 + "<br>");
+    document.write("angle B is = "+ angle2 + "<br>");
+    document.write("angle C is = "+ angle3 + "<br><br>");
+
+    if(180==0){
+        document.write("YOUR TRIANGLE IS VALID...!");
+    }
+    else{
+        document.write("YOUR TRIANGLE IS NOT VALID...!");
+    }
+
+    let ans=triangle();
+</script>
